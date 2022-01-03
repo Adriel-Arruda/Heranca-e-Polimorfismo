@@ -13,7 +13,7 @@ namespace TaxCalculation.Entities
         {
             NumberOfEmployees = numberOfEmployees;
         }
-        public override double TaxPay()
+        public sealed override double TaxPay()
         {
             double taxPay = (NumberOfEmployees<10)? 0.16 : 0.14;
             return taxPay * AnnualIncome;

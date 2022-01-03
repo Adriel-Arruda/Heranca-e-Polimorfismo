@@ -4,8 +4,8 @@ namespace TaxCalculation.Entities
 {
     public abstract class Taxpayer
     {
-        public string Name { get; set; }
-        public double AnnualIncome { get; set; }
+        public string Name { get; protected set; }
+        protected double AnnualIncome { get; set; }
 
         public abstract double TaxPay();
 
